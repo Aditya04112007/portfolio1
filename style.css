@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Background Image Only */
+body {
+    background: url("ece_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(31,31,31,0.7);
+}
+
+header h1 {
+    color: #ffffff;    /* changed from green */
+    font-size: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-content img.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;  /* changed from green */
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;  /* changed from green */
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: rgba(255,255,255,0.85);  /* changed from green */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(255,255,255,1);   /* lighter hover */
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-list span {
+    background-color: rgba(31,31,31,0.85);
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skill-list span:hover {
+    background-color: #ffffff;  /* changed from green */
+    color: #000000;
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background-color: rgba(31,31,31,0.85);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    background-color: #2a2a2a;
+}
+
+/* Contact */
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-buttons .btn {
+    padding: 0.8rem 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(31,31,31,0.7);
+    color: #ccc;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
